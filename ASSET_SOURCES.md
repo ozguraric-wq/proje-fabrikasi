@@ -23,3 +23,7 @@
 Valilik ve Vizyon Eskişehir 2036 logoları, kullanıcı tarafından sağlanan ve V4 Word belgesinde bulunan özgün görsellerden alınmıştır. Sadece boyut ve dosya biçimi optimizasyonu yapılmıştır. Bu logolar için CC fotoğraf lisansı iddia edilmez.
 
 Küçük site simgesi basit PF monogramıdır; bir resmî kurum ambleminin yeniden çizimi değildir.
+
+## Ratel Dijital giriş logosu
+
+Kullanıcının daha önce hazırlattığı “Ratel Dijital Logo Tasarımı.png” görseli kullanıldı. Şeffaf dış boşluklar alınarak 640 piksel genişliğe küçültüldü ve kayıpsız WebP olarak saklandı. Marka biçimi, yazı ve renkler yeniden çizilmedi.

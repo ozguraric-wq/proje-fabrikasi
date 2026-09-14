@@ -8,13 +8,20 @@ Bu paket sunum demosudur. Başvuru toplamaz, kişisel veri saklamaz ve bir başv
 
 14 içerik bölümü; üç proje kaynağı ve üç çıktı şeması; 14 ilçe kapsamı; yedi aşamalı etkileşimli üretim döngüsü; görev ve zaman paylaşımı; Bir Fikrim Var işleyişi; dosya standardı ve hazırlık seviyeleri; finansman yolları; puanlama ağırlıkları; başvuru ve teslim kontrolleri; izleme ve sürdürülebilirlik; 90 günlük pilot ve 14 ekin açıklamaları.
 
+## Demo giriş ekranı
+
+Ratel Dijital logolu karşılama ekranı, kullanıcı tarafından belirlenen ortak demo bilgileriyle açılır. Şifre açık metin olarak kaynak dosyalarına yazılmaz; tarayıcıda SHA-256 özeti karşılaştırılır. Geçiş durumu yalnızca sekmenin oturum belleğinde saklanır. Çıkış düğmesi bu durumu temizler.
+
+Bu mekanizma bir sunum kapısıdır; sunucuda kimlik doğrulamaz. GitHub deposu ve belge adresleri herkese açıktır. Kaynak dosyaları incelenerek ekran aşılabilir. Gizli içerik için sunucu tarafında erişim kontrolü gerekir. V4 Word/PDF dosyalarının açık paylaşımı kullanıcı tarafından onaylanmıştır.
+
 ## Dosyalar
 
 - `dist/index.html`: Sunumun bütün içeriği. Çerçeve veya kurulum gerektirmeyen statik site.
 - `dist/assets/site.css`: Kurumsal görünüm, masaüstü mega menü, mobil açılır yan menü, duyarlı yerleşim ve yazdırma stilleri.
+- `dist/assets/access.js` ve `access.css`: Demo giriş ekranı, hata durumu, şifre görünürlüğü ve çıkış.
 - `dist/assets/site.js`: Menü, klavye ile sekme gezinmesi, ilgili ekin açılması ve sayfa başına dönüş.
 - `dist/assets/*.webp`: Yerel, farklı ekran boyutları için optimize edilmiş görseller. Masaüstü görselinin büyük sürümü mobilde indirilmez.
-- V4 Word ve PDF dosyalarının herkese açık paylaşımı açık kullanıcı onayı beklemektedir. Bu sürümde belge dosyaları ve indirme bağlantıları yayımlanmaz; webde 14 ekin kullanım açıklamaları bulunur.
+- `dist/belgeler/`: Konsept ve 14 uygulama ekini içeren V4 Word ve PDF.
 - `.github/workflows/pages.yml`: GitHub Pages yayın akışı.
 
 ## GitHub Pages yayını
@@ -24,7 +31,7 @@ Bu paket sunum demosudur. Başvuru toplamaz, kişisel veri saklamaz ve bir başv
 3. Ana dala gönderim, yayın akışını başlatır. Gerekirse **Actions → Proje Fabrikası demo yayını → Run workflow** çalıştırın.
 4. Yayın bağlantısı yalnızca başarılı Actions çalışmasındaki `github-pages` ortamı ve Pages ayarları üzerinden alınmalıdır.
 
-GitHub Pages henüz bu paket için etkinleştirilmiş veya başarılı yayın doğrulanmış değildir. Bir canlı adres varsayılmamıştır.
+GitHub Pages yayını, ana dala gönderimde çalışır. Sonuç ve yayın adresi `github-pages` ortamından izlenir.
 
 [GitHub'ın resmî Pages iş akışı rehberi](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) esas alınmıştır. Yalnızca `dist` yayımlanır; paket meta belgeleri ziyaretçilere sunulmaz.
 

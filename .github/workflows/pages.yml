@@ -27,7 +27,13 @@ jobs:
           test -s dist/index.html
           test -s dist/assets/site.css
           test -s dist/assets/site.js
+          test -s dist/assets/access.css
+          test -s dist/assets/access.js
+          test -s dist/assets/ratel-dijital.webp
+          test -s dist/belgeler/Proje_Fabrikasi_Konsept_ve_Ekler_V4.docx
+          test -s dist/belgeler/Proje_Fabrikasi_Konsept_ve_Ekler_V4.pdf
           node --check dist/assets/site.js
+          node --check dist/assets/access.js
       - name: GitHub Pages hazırlığı
         uses: actions/configure-pages@v5
       - name: Yayın paketini yükle

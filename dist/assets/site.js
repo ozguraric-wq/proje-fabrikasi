@@ -106,8 +106,11 @@
   });
 
   function focusAnchor(hash) {
+    if (document.getElementById('presentation').hidden) return;
     if (!hash || hash === '#') return;
-    const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
     if (!target) return;
     if (target.tagName === 'DETAILS') {
       target.open = true;
@@ -120,6 +123,8 @@
   document.querySelectorAll('a[href^="#ek-"]').forEach(link => link.addEventListener('click', () => focusAnchor(link.hash)));
   window.addEventListener('hashchange', () => focusAnchor(location.hash));
   focusAnchor(location.hash);
+  document.addEventListener('pf:access-granted', () => focusAnchor(location.hash));
+  document.addEventListener('pf:access-revoked', () => { closeMega(); closeMobile(); });
 
   const backTop = document.querySelector('.back-top');
   const updateScroll = () => backTop.classList.toggle('visible', window.scrollY > 700);

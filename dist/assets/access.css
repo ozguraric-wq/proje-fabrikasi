@@ -1,0 +1,40 @@
+.access-screen{display:grid;grid-template-columns:1.08fr 1fr;min-height:100vh;min-height:100svh;background:#fff;isolation:isolate}
+.access-story{padding:clamp(32px,5vw,80px);display:flex;flex-direction:column;justify-content:space-between;gap:64px;background:#f3f5f7;position:relative;border-top:6px solid #d21222}
+.access-brand{width:min(280px,100%);background:#fff;padding:20px 22px;border-radius:4px}
+.access-brand img{width:100%;height:auto;aspect-ratio:640/201;object-fit:contain}
+.access-story-copy{padding-bottom:24px;max-width:550px}
+.access-eyebrow{font-size:.81rem;font-weight:750;letter-spacing:.15em;color:#6a4447;margin-bottom:24px}
+.access-story h2{font-size:clamp(2.5rem,4.1vw,4.3rem);font-weight:650;line-height:1.15;letter-spacing:-.045em;color:#17232d}
+.access-story h2 em{font-style:normal;color:#cb1325}
+.access-story-copy>p:last-child{font-size:1.08rem;line-height:1.8;margin-top:28px;max-width:450px;color:#52606a}
+.access-story-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #d6dce1;padding-top:24px;font-size:.81rem;color:#52606a}
+.access-story-bottom span:last-child{font-weight:700;letter-spacing:.09em}
+.access-form-side{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:70px clamp(28px,5vw,90px) 32px;min-width:0}
+.access-form-wrap{width:100%;max-width:420px;margin-block:auto}
+.access-kicker{font-size:.75rem;letter-spacing:.12em;font-weight:700;color:#7a5155;display:block;margin-bottom:22px;line-height:1.7}
+.access-form-wrap h2{font-size:clamp(1.9rem,2.6vw,2.65rem);line-height:1.2;letter-spacing:-.035em;color:#17232d}
+.access-intro{margin:18px 0 34px;font-size:1rem;line-height:1.8;color:#5e6972}
+.access-field{margin-top:24px}
+.access-field label{display:block;font-size:.94rem;font-weight:650;margin-bottom:9px;color:#25343f}
+.access-field input{width:100%;min-width:0;min-height:56px;border:1px solid #b9c5cd;border-radius:5px;background:#fff;padding:14px 16px;font:inherit;font-size:1rem;line-height:1.5;color:#17232d;outline-offset:3px}
+.access-field input:focus-visible{outline:3px solid #c7192b;border-color:#c7192b}
+.access-field input[aria-invalid=true]{border-color:#b5172a;background:#fff9f9}
+.access-field input::placeholder{color:#75818b;opacity:1}
+.access-password-wrap{position:relative}
+.access-password-wrap input{padding-right:90px}
+#access-reveal{position:absolute;inset:5px 5px 5px auto;padding:9px 12px;border:0;background:#f0f3f5;border-radius:3px;font-size:.85rem;font-weight:650;color:#354650}
+.access-submit{width:100%;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 20px;border:1px solid #c71124;border-radius:5px;background:#c71124;color:#fff;font-size:1rem;font-weight:650;margin-top:28px;transition:background .15s}
+.access-submit:hover{background:#aa0d1e}.access-submit:disabled{opacity:.6}
+.access-submit:focus-visible,#access-reveal:focus-visible{outline:3px solid #0f98b6;outline-offset:4px}
+.access-submit>span:last-child{font-size:1.4rem;line-height:1}
+.access-error{font-size:.9rem;color:#a40e21;background:#fff0f1;padding:12px 14px;border-left:3px solid #c71124;margin-top:16px;line-height:1.65}
+.access-demo-note{font-size:.85rem;color:#6b747b;border-top:1px solid #e0e5e8;padding-top:21px;margin-top:27px}
+.access-footer{padding-top:50px;text-align:center;font-size:.8rem;color:#707b83}
+.access-logout{flex-shrink:0;min-height:44px;padding:8px 12px;background:#f2f5f7;border:1px solid #d9e1e6;border-radius:4px;font-size:.875rem;font-weight:600;color:#354b5a}
+.access-logout:hover{background:#e4ecf0}
+@media(min-width:1024px) and (max-width:1240px){.header-inner{gap:15px}.desktop-nav{gap:16px}.header-document{display:none}}
+@media(max-width:1023px){.access-logout{margin-left:auto}.header-inner .menu-toggle{margin-left:0}}
+@media(max-width:700px){.header-inner{gap:10px}.access-logout{padding-inline:8px}.brand{gap:10px}}
+@media(max-width:760px){.access-screen{grid-template-columns:1fr}.access-story{padding:28px 26px 30px;gap:30px;border-top-width:5px}.access-brand{width:210px;padding:13px 16px}.access-story-copy{padding-bottom:0;max-width:500px}.access-eyebrow{font-size:.75rem;margin-bottom:12px}.access-story h2{font-size:clamp(2rem,6.5vw,2.8rem)}.access-story-copy>p:last-child{display:none}.access-story-bottom{display:none}.access-form-side{padding:35px 26px 22px}.access-form-wrap{max-width:500px}.access-kicker{margin-bottom:13px;font-size:.75rem}.access-form-wrap h2{font-size:1.85rem}.access-intro{margin-block:13px 23px}.access-field{margin-top:20px}.access-footer{padding-top:30px}}
+@media(max-width:370px){.access-story{padding:24px 20px}.access-form-side{padding-inline:20px}.header-inner{gap:8px}.access-logout{padding-inline:8px}.brand{gap:9px}.brand .vizyon-logo{width:96px}.brand img{width:47px;height:47px}.menu-toggle{width:38px;flex-shrink:0}}
+@media print{.access-logout{display:none!important}.access-screen{min-height:auto}.access-story{padding:24pt}.access-form-side{padding:24pt}}
