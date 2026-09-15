@@ -14,38 +14,11 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23081f31'/%3E%3Cpath d='M11 30V10h10a7 7 0 0 1 0 14H11m0-7h10' fill='none' stroke='%2363e1cd' stroke-width='4'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23e52536'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/site.css">
   <link rel="stylesheet" href="assets/access.css">
-  <script src="assets/access.js" defer></script>
+  <script src="assets/access.js?v=public-access" defer></script>
   <script src="assets/site.js" defer></script>
 </head>
 <body>
-  <section class="access-screen" id="access-screen" aria-labelledby="access-title">
-    <div class="access-story">
-      <div class="access-brand"><img src="assets/ratel-dijital.webp" alt="Ratel Dijital" width="640" height="201" fetchpriority="high"></div>
-      <div class="access-story-copy">
-        <p class="access-eyebrow">VİZYON ESKİŞEHİR 2036</p>
-        <h2>Bir şehrin geleceği,<br><em>bir fikirle başlar.</em></h2>
-        <p>Proje Fabrikasının çalışma modelini, üretim sürecini ve uygulama belgelerini birlikte keşfedin.</p>
-      </div>
-      <div class="access-story-bottom"><span>14 ilçe · Ortak vizyon</span><span>RATEL DİJİTAL</span></div>
-    </div>
-    <div class="access-form-side">
-      <div class="access-form-wrap">
-        <span class="access-kicker">PROJE FABRİKASI / SUNUM DEMOSU</span>
-        <h2 id="access-title" tabindex="-1">Sunuma hoş geldiniz.</h2>
-        <p class="access-intro" id="access-intro">Size iletilen kullanıcı adı ve şifre ile devam edin.</p>
-        <form id="access-form" aria-describedby="access-intro access-error" method="post">
-          <div class="access-field"><label for="access-username">Kullanıcı adı</label><input id="access-username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required maxlength="100" placeholder="Kullanıcı adınız" disabled></div>
-          <div class="access-field"><label for="access-password">Şifre</label><div class="access-password-wrap"><input id="access-password" name="password" type="password" autocomplete="current-password" required maxlength="200" placeholder="Şifreniz" disabled><button type="button" id="access-reveal" aria-controls="access-password" aria-pressed="false" disabled>Göster</button></div></div>
-          <p id="access-error" class="access-error" role="alert" aria-live="assertive" hidden></p>
-          <button class="access-submit" type="submit" disabled><span>Sunuma giriş</span><span aria-hidden="true">→</span></button>
-        </form>
-        <noscript><p class="access-error">Giriş yapabilmek için tarayıcınızda JavaScript'i etkinleştirin.</p></noscript>
-        <p class="access-demo-note">V4 konsept sunumu ve 14 uygulama eki</p>
-      </div>
-      <p class="access-footer">Ratel Dijital · Proje Fabrikası</p>
-    </div>
-  </section>
-  <div id="presentation" hidden inert>
+  <div id="presentation">
   <a class="skip-link" href="#icerik">İçeriğe geç</a>
   <header class="site-header" id="baslangic">
     <div class="header-inner wrap">
@@ -60,7 +33,6 @@
         <button class="mega-trigger" aria-expanded="false" aria-controls="mega-kaynak">Uygulama rehberi <span aria-hidden="true">⌄</span></button>
       </nav>
       <a class="header-document" href="#belgeler">Konsept ve ekler <span aria-hidden="true">↗</span></a>
-      <button class="access-logout" type="button" data-signout aria-label="Sunumdan çıkış yap">Çıkış</button>
       <button class="menu-toggle" aria-label="Menüyü aç" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button>
     </div>
     <div class="mega-panel" id="mega-model" hidden><div class="wrap mega-grid"><div class="mega-intro"><span class="eyebrow">01 / MODEL</span><h2>Ortak vizyon.<br>Sürekli üretim.</h2><p>Şehrin ihtiyacını, kurumların bilgisini ve insanların fikrini aynı üretim sürecinde buluşturuyoruz.</p></div><div><a href="#model"><strong>Proje Fabrikası nedir?</strong><span>Model, üç giriş ve üç somut çıktı</span></a><a href="#kapsam"><strong>14 ilçeyi gözeten yaklaşım</strong><span>İl geneli, ilçeler arası ve yerel etki</span></a></div><div><a href="#konular"><strong>Konular ve katılım ağı</strong><span>İhtiyaç alanları ve kurumların katkısı</span></a><a href="#fikir"><strong>Bir Fikrim Var</strong><span>Vatandaş önerisinden ortak geliştirmeye</span></a></div></div></div>
